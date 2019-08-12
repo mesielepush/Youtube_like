@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/materialize.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -61,6 +63,112 @@
         </div>
     </div>
     </div>
+
+<div id = 'video feed'>
+    <h5>Up next   <span>autoplay</span><i class="material-icons white-text">info</i> </h5>
+    <div class="switch">
+            <label>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+    
+    
+    <ul>
+        <li>
+            <img src="https://i.imgur.com/bwwCjxz.jpg" alt="video_feed1">
+            <h5>Some title</h5>
+            <span> this is the name of the channel</span>
+            <span>25000 views</span>
+        </li>
+
+        <li>
+                <img src="https://i.imgur.com/6qewAcZ.jpg" alt="video_feed1">
+                <h5>Some title</h5>
+                <span> this is the name of the channel</span>
+                <span>25000 views</span>
+        </li>
+
+        <li>
+                <img src="https://i.imgur.com/txXSTRf.jpg" alt="video_feed1">
+                <h5>Some title</h5>
+                <span> this is the name of the channel</span>
+                <span>25000 views</span>
+        </li>
+    </ul>
+</div>
+<footer>
+    <nav id='navbar'>
+        <a href=""><img src="https://archive.fo/Uji9d/51a3832e6af6792add876216da444db23a4bea96.png" alt="Logo"></a>
+        <div class = 'material-icons white-text'>
+            
+            <select>
+                <option value="Language: English">Language: English</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select>
+                    <option data-icon="thumb_up_alt" value="volvo">Location: Neatherlands</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+            </select>
+            <select>
+                    <option data-icon="thumb_up_alt" value="volvo">Restricted Mode: Off</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+            </select>
+            <button><i class="material-icons white-text">hourglass_empty</i> History</button>
+            <button><i class="material-icons white-text">help</i>Help</button>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Press</a>
+                </li>
+                <li>
+                    <a href="">Copyright</a>
+                </li>
+                <li>
+                    <a href="">Creators</a>
+                </li>
+                <li>
+                    <a href="">Advertise</a>
+                </li>
+                <li>
+                    <a href="">Developers</a>
+                </li>
+                
+            </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <a href="">Terms</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+            <li>
+                <a href="">Policy and Safety</a>
+            </li>
+            <li>
+                <a href="">Test new features</a>
+            </li>
+            
+                
+            </ul>
+    </div>
+    </nav>
+</footer>
+<br><br><br><br><br>
 
 </body>
 </html>
