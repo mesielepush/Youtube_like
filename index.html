@@ -2,31 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Youtube Clone</title>
 </head>
 
 
 <body>
-    <div class="nav-wrapper">
-    
-    <nav id='navbar'>
-        <a href="main/register" class="brand-logo"><i class="material-icons white-text hamburger-icon">reorder</i></a>
-        <a href=""><img src="https://archive.fo/Uji9d/51a3832e6af6792add876216da444db23a4bea96.png" alt="Logo"></a>
-        <input type="text" placeholder="Search..">
-        <button type="submit"><i class="material-icons white-text">search</i></button>
-        <button type="submit"><i class="material-icons white-text">cloud_upload</i></button>
-        <button type = 'sumbit'>Sing in</button>
+
+    <nav>
+            <div class="row white">
+                    
+                    
+                    <div class="col s1"><a href="#!"><i class="material-icons black-text">reorder</i></a></div>
+                                     
+                    
+                    <div class="col s2"><a href=""><img  src="https://archive.fo/Uji9d/51a3832e6af6792add876216da444db23a4bea96.png" alt="Logo"></a></div>
+                    <div class="col s3"><input id = 'search_bar' type="text" placeholder="Search.."></div>
+                    
+                  </div>
     </nav>
 
-    <div id="video">
+
+
+
+    <div class = 'left' id="video">
         <div id="player">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h2>Contributing to Open Source Part I: The Easy Way</h2>
+            <p>Contributing to Open Source Part I: The Easy Way</p>
         </div>
 
         <div id="channel-settings">
