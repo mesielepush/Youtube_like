@@ -3,176 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
     <title>Youtube Clone</title>
 </head>
 
-
 <body>
+  
+  <div class="wrapper">
 
-    <nav>
-            <div class="row white">
-                    
-                    
-                    <div class="col s1"><a href="#!"><i class="material-icons black-text">reorder</i></a></div>
-                                     
-                    
-                    <div class="col s2"><a href=""><img  src="https://archive.fo/Uji9d/51a3832e6af6792add876216da444db23a4bea96.png" alt="Logo"></a></div>
-                    <div class="col s3"><input id = 'search_bar' type="text" placeholder="Search.."></div>
-                    
-                  </div>
-    </nav>
-
-
-
-
-    <div class = 'left' id="video">
-        <div id="player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Contributing to Open Source Part I: The Easy Way</p>
-        </div>
-
-        <div id="channel-settings">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k=" alt="" id="avatar">
-            <span>The Odin Project</span>
-            <div class="subscribe">
-                <h5> Subscribe <span class="sub-button">799</span></h5>
-            </div>
-
-            <ul>
-                <li> <i class="material-icons white-text">add</i> <span>Add to</span></li>
-                <li> <i class="material-icons white-text">reply</i> <span>Share</span></li>
-                <li> <i class="material-icons white-text">more_horiz</i> <span>More</span></li>
-            </ul>
-
-            <div class="view-counter">
-                <span>50,016 views</span>
-
-                <ul>
-                    <li><i class="material-icons white-text">thumb_up_alt</i> <span>359</span></li>
-                    <li><i class="material-icons white-text">thumb_down_alt</i> <span>14</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="description">
-            <h5>Published on Feb 27, 2014</h5>
-
-            <textarea name="" id="" cols="30" rows="10">
-                How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.
-            </textarea>
-            <br />
-            <button>Show More</button>
-        </div>
-    </div>
+    <div class="navbar">
+      <a href=""><i class = "material-icons md-36">search</i></a>
+      <img src="https://i.imgur.com/VlTgtGo.jpg" alt="">
+      <input type="text" placeholder="Search..">
+      <a href=""><i class = "material-icons">search</i></a>
+      <a href=""><i class = "material-icons">file_upload</i></a>
+      <a href="" class="btn">Sing in</a>
     </div>
 
-<div id = 'video-feed'>
-    <h5>Up next   <span>autoplay</span><i class="material-icons white-text">info</i> </h5>
-    <div class="switch">
-            <label>
-              Off
-              <input type="checkbox">
-              <span class="lever"></span>
-              On
-            </label>
-          </div>
-    
-    
-    <ul>
-        <li>
-            <img src="https://i.imgur.com/bwwCjxz.jpg" alt="video_feed1">
-            <h5>Some title</h5>
-            <span> this is the name of the channel</span>
-            <span>25000 views</span>
-        </li>
 
-        <li>
-                <img src="https://i.imgur.com/6qewAcZ.jpg" alt="video_feed1">
-                <h5>Some title</h5>
-                <span> this is the name of the channel</span>
-                <span>25000 views</span>
-        </li>
-
-        <li>
-                <img src="https://i.imgur.com/txXSTRf.jpg" alt="video_feed1">
-                <h5>Some title</h5>
-                <span> this is the name of the channel</span>
-                <span>25000 views</span>
-        </li>
-    </ul>
-</div>
-<footer>
-    <nav id='navbar'>
-        <a href=""><img src="https://archive.fo/Uji9d/51a3832e6af6792add876216da444db23a4bea96.png" alt="Logo"></a>
-        <div class = 'material-icons white-text'>
-            
-            <select>
-                <option value="Language: English">Language: English</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-            </select>
-            <select>
-                    <option data-icon="thumb_up_alt" value="volvo">Location: Neatherlands</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-            </select>
-            <select>
-                    <option data-icon="thumb_up_alt" value="volvo">Restricted Mode: Off</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-            </select>
-            <button><i class="material-icons white-text">hourglass_empty</i> History</button>
-            <button><i class="material-icons white-text">help</i>Help</button>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Press</a>
-                </li>
-                <li>
-                    <a href="">Copyright</a>
-                </li>
-                <li>
-                    <a href="">Creators</a>
-                </li>
-                <li>
-                    <a href="">Advertise</a>
-                </li>
-                <li>
-                    <a href="">Developers</a>
-                </li>
-                
-            </ul>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0xY06PT5JDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div>
-        <ul>
-            <li>
-                <a href="">Terms</a>
-            </li>
-            <li>
-                <a href="">Privacy</a>
-            </li>
-            <li>
-                <a href="">Policy and Safety</a>
-            </li>
-            <li>
-                <a href="">Test new features</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
-</footer>
-<br><br><br><br><br>
 
+
+    <div class="sidebar">
+      <img src="https://i.imgur.com/VlTgtGo.jpg" alt="">
+      <img src="https://i.imgur.com/VlTgtGo.jpg" alt="">
+      <img src="https://i.imgur.com/VlTgtGo.jpg" alt="">
+
+
+    </div>
+    <div class="description_video">Down_video</div>
+    <div class= 'second_description'>second</div>
+
+    <div class = 'footer'>footer</div>
+  </div>
 </body>
 </html>
